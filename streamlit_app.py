@@ -42,7 +42,7 @@ if ingredients_list:
         st.success('Your Smoothie is ordered, ' + name_on_order + '', icon="✅")
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-fruityvice_json = fruityvice_response.json()
+fruityvice_json = False #fruityvice_response.json()
 if fruityvice_json:
     fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
 else:
