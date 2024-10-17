@@ -46,4 +46,5 @@ fruityvice_json = False #fruityvice_response.json()
 if fruityvice_json:
     fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
 else:
-    st.write('The was an error trying to retrieve data from Fruityvice: ' + fruityvice_response)
+    st.write('The was an error trying to retrieve data from Fruityvice: ')
+    st.write(fruityvice_json)
